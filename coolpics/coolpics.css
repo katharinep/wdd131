@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+    }
+
+* {
+    font-family: "Mooli", sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 600px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #ebebeb;
+    font-size: 25px;
+}
+
+nav {
+    display: grid;
+    font-size: 20px;
+}
+
+a {
+    padding: 3px;
+    text-decoration: underline;
+}
+
+a:link,
+a:visited {
+  color: var(--accent-color);
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border: 8px solid white;
+    box-shadow: 1px 3px 3px 1px;
+}
+
+header {
+    background-color: #52489c;
+    color: #ebebeb;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+footer {
+    background-color: #52489c;
+    color: #ebebeb;
+}
+
+footer p {
+    padding: 8px;
+    text-align: left;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        max-width: 1024px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        max-height: 250px;
+    }
+    a {
+        display: none;
+    }
+    img {
+
+    }
+    h1 {
+        margin: 10px;
+        font-size: 40px;
+    }
+    nav {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        min-width: 1025px;
+    }
+    button {
+        display: none;
+    }
+    nav {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
