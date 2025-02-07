@@ -13,10 +13,122 @@
 :root {
     --primary-color: #023047;
     --secondary-color: #FFB703;
-    --accent-color: #FB8500;
+    --accent-color: #FA5316;
 }
 
 body {
     font-family: "Baskervville", serif;
+    background-color: white;
     /*Add general styling here*/
+}
+
+h1 {
+    display: fixed;
+    text-align: center;
+    margin: 35px;
+    color:#023047;
+    /*increse font size for wider screen*/
+}
+
+nav {
+    background-color:#023047;
+    border-top:#FFB703 solid 5px;
+    border-bottom:#FFB703 solid 5px;
+}
+
+nav > ul {
+    /*display: flex;*/
+    /*align-self: center;*/
+    /*justify-content: flex-end;*/
+    margin: 0px 10px 0px 10px;
+    /*flex-direction: row;*/
+    /*form right margin should align with the nav*/
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    justify-items: end;
+    gap: 25px;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav li {
+    /*margin-left: 10px;*/
+    font-size: 20px;
+    color:#FFB703;
+    margin-right: 15px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-top: 15px;
+}
+
+.metadata {
+    display: grid;
+    color:#023047;
+    border-right:#FFB703 solid 2px;
+    /*margin-left: auto;*/
+    padding: 20px;
+    /*justify-content: right;*/
+}
+
+.metadata > * {
+    text-align: right;
+}
+
+.review-content {
+    display: grid;
+    color:#023047;
+    padding: 15px;
+
+}
+
+.sort-form {
+    display: grid;
+    color: white;
+    background-color: #023047;
+    border:#FA5316 solid 2px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h2 {
+    color:#FA5316;
+    font-size: 28px;
+    /*background-color: #023047;*/
+    padding-left: 10px;
+    justify-items: center;
+}
+
+footer {
+    display: flex;
+    color:#FFB703;
+    background-color: #023047;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+footer p {
+    padding: 2px;
+}
+
+p {
+    font-weight: 600;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    margin: 0;
+    color: white;
+    background-color: #B30000;
+}
+
+.skiptocontent a:focus {
+    top: 0;
 }
