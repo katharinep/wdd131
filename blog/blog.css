@@ -64,6 +64,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding-top: 15px;
+    margin: 0 auto;
 }
 
 .metadata {
@@ -71,7 +72,7 @@ main {
     color:#023047;
     border-right:#FFB703 solid 2px;
     /*margin-left: auto;*/
-    padding: 20px;
+    padding: 10px;
     /*justify-content: right;*/
 }
 
@@ -83,7 +84,13 @@ main {
     display: grid;
     color:#023047;
     padding: 15px;
+    margin-bottom: 30px;
+}
 
+.review-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
 }
 
 .sort-form {
@@ -95,6 +102,7 @@ main {
 
 h3 {
     font-size: 20px;
+    padding-top: 12px;
 }
 
 h2 {
@@ -103,6 +111,7 @@ h2 {
     /*background-color: #023047;*/
     padding-left: 10px;
     justify-items: center;
+    padding-top: 0px;
 }
 
 footer {
@@ -120,6 +129,7 @@ footer p {
 p {
     font-weight: 600;
 }
+
 
 .skiptocontent a {
     position: absolute;
