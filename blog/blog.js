@@ -40,57 +40,75 @@ const articles = [
 ]
 
 const articleContainer = document.querySelector(".review-content");
+const metadataContainer = document.querySelector(".metadata");
 
 articles.forEach((article) => {
+	metadataContainer.innerHTML += `
+		<div class="metadata">
+			<h3 id="date">${article.date}</h3>
+			<p id="ages">${article.ages}</p>
+			<p id="genre">${article.genre}</p>
+			<p id="stars">${article.stars}</p>
+		</div>
+	`;
+	
 	const newArticle = document.createElement("article");
 	newArticle.classList.add("review-content");
 	
-	const bookTitle = document.createElement("h2");
-	bookTitle.id = "book-title";
-	bookTitle.textContent = article.title;
+	newArticle.innerHTML = `
+		<div class="review-content">
+			<h2 id="book-title">${article.title}</h2>
+			<img id="post-image" src=${article.imgSrc} alt=${article.imgAltlt}>
+			<p id="review-paragraph">${article.description}</p>
+			</div>
+	`;
 
-	const bookImage = document.createElement("img");
-	bookImage.id = "post-image";
-	bookImage.src = article.imgSrc;
-	bookImage.alt = article.imgAlt;
+	//const bookTitle = document.createElement("h2");
+	//bookTitle.id = "book-title";
+	//bookTitle.textContent = article.title;
 
-	const reviewParagraph = document.createElement("p");
-	reviewParagraph.id = "review-paragraph";
-	reviewParagraph.textContent = article.description;
+	//const bookImage = document.createElement("img");
+	//bookImage.id = "post-image";
+	//bookImage.src = article.imgSrc;
+	//bookImage.alt = article.imgAlt;
 
-	newArticle.appendChild(bookTitle);
-	newArticle.appendChild(bookImage);
-	newArticle.appendChild(reviewParagraph);
+	//const reviewParagraph = document.createElement("p");
+	//reviewParagraph.id = "review-paragraph";
+	//reviewParagraph.textContent = article.description;
+
+	//newArticle.appendChild(bookTitle);
+	//newArticle.appendChild(bookImage);
+	//newArticle.appendChild(reviewParagraph);
 
 	articleContainer.appendChild(newArticle);
 });
 
-const detailContainer = document.querySelector("#metadata");
+//const detailContainer = document.querySelector("#metadata");
 
-articles.forEach((article) => {
-	const newArticle = document.createElement("article");
-	newArticle.classList.add("metadata");
+//articles.forEach((article) => {
+	//const newArticle = document.createElement("article");
+	//newArticle.classList.add("metadata");
 
-	const reviewDate = document.createElement("h3");
-	reviewDate.id = "date";
-	reviewDate.textContent = article.date;
+	//const reviewDate = document.createElement("h3");
+	//reviewDate.id = "date";
+	//reviewDate.textContent = article.date;
 	
-	const bookAge = document.createElement("p");
-	bookAge.id = "ages";
-	bookAge.textContent = article.ages;
+	//const bookAge = document.createElement("p");
+	//bookAge.id = "ages";
+	//bookAge.textContent = article.ages;
 
-	const bookGenre = document.createElement("p");
-	bookGenre.id = "genre";
-	bookGenre.textContent = article.genre;
+	//const bookGenre = document.createElement("p");
+	//bookGenre.id = "genre";
+	//bookGenre.textContent = article.genre;
 
-	const bookStars = document.createElement("p");
-	bookStars.id = "stars";
-	bookStars.textContent = article.stars;
+	//const bookStars = document.createElement("p");
+	//bookStars.id = "stars";
+	//bookStars.textContent = article.stars;
 
-	newArticle.appendChild(reviewDate);
-	newArticle.appendChild(bookAge);
-	newArticle.appendChild(bookGenre);
-	newArticle.appendChild(bookStars);
+	//newArticle.appendChild(reviewDate);
+	//newArticle.appendChild(bookAge);
+	//newArticle.appendChild(bookGenre);
+	//newArticle.appendChild(bookStars);
 
-	detailContainer.appendChild(newArticle);
-});
+	//detailContainer.appendChild(newArticle);
+//});
