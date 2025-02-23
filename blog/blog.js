@@ -1,3 +1,4 @@
+//blog.js//
 const articles = [
 	{
 		id: 1,
@@ -44,7 +45,7 @@ const metadataContainer = document.querySelector(".metadata");
 
 articles.forEach((article) => {
 	metadataContainer.innerHTML += `
-		<div class="metadata">
+		<div class="metadata-post">
 			<h3 id="date">${article.date}</h3>
 			<p id="ages">${article.ages}</p>
 			<p id="genre">${article.genre}</p>
