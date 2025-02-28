@@ -1,0 +1,54 @@
+/*creditcard.css*/
+
+* {
+    max-width: 500px;
+}
+
+.cardFront, .cardBack {
+    width: 350px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgb(228, 228, 228);
+}
+
+#cardFront, #cardBack {
+    border: none;
+    display: grid;
+
+}
+
+.cardFront {
+    z-index: 1;
+    box-shadow: 0px 2px 2px 0px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.cardBack {
+    z-index: -2;
+    position: absolute;
+    top: 75px;
+    left: 100px;
+}
+
+button {
+    position: absolute;
+    top: 330px;
+    left: 420px;
+    border: 1px solid black;
+    padding: 5px 8px 5px 8px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.expirationInputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+
+#cardBack {
+
+}
