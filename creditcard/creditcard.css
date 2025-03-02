@@ -4,51 +4,87 @@
     max-width: 500px;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
 .cardFront, .cardBack {
-    width: 350px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     padding: 20px;
     background-color: rgb(228, 228, 228);
+    box-sizing: border-box;
 }
 
-#cardFront, #cardBack {
-    border: none;
-    display: grid;
-
-}
+/*label, input {
+    width: 100%;
+}*/
 
 .cardFront {
-    z-index: 1;
-    box-shadow: 0px 2px 2px 0px black;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
 
+/*.totalContainer {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}*/
+
+/*#cardImage {
+    grid-column: 2 / 3;
+}*/
+
+/*#cardNumber {
+    grid-column: 1/ span 2;
+}*/
+
 .cardBack {
-    z-index: -2;
-    position: absolute;
-    top: 75px;
-    left: 100px;
+    z-index: -1;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+
 }
 
 button {
-    position: absolute;
-    top: 330px;
-    left: 420px;
     border: 1px solid black;
     padding: 5px 8px 5px 8px;
     border-radius: 6px;
     font-size: 16px;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
 }
 
-.expirationInputs {
+/*.expirationInputs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2px;
-}
+    gap: 10px;
+    width: 50px;
+}*/
 
-#cardBack {
+/*.magneticStrip {
+    background-color: black;
+    width: 300px;
+}*/
 
-}
+/*.cardNumberContainer {
+    grid-column: 1 / span 2;
+}*/
+
+/*.cardHolderContainer {
+    grid-column: 1 / 2;
+}*/
+
+/*.expirationContainer {
+    grid-column: 2 / 3;
+}*/
