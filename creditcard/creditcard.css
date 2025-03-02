@@ -18,42 +18,84 @@ form {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    padding: 20px;
     background-color: rgb(228, 228, 228);
     box-sizing: border-box;
+    font-size: 18px;
 }
 
-/*label, input {
+label, input {
     width: 100%;
-}*/
+    line-height: 1.5;
+}
 
 .cardFront {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-    display: grid;
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+    padding: 20px;
 }
 
-/*.totalContainer {
-    grid-column: 1 / 2;
+#cardFront {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: none;
+    gap: 10px;
+}
+
+.totalContainer {
+    grid-column: 1 / 2;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
     align-items: center;
-}*/
+}
 
-/*#cardImage {
+
+#cardImage {
     grid-column: 2 / 3;
-}*/
+    grid-row: 1 / 2;
+    justify-self: end;
+    align-self: center;
+}
 
-/*#cardNumber {
-    grid-column: 1/ span 2;
-}*/
+img {
+    justify-items: right;
+}
+
+#cardNumber {
+    grid-column: 1/ 3;
+    grid-row: 2 / 3;
+    width: 100%;
+}
+
+.cardHolderContainer {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.expirationContainer {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.expirationInputs {
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+}
 
 .cardBack {
     z-index: -1;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+}
 
+#cardBack {
+    display: grid;
+    grid-template-columns: 245px 100px;
+    grid-template-rows: 100px 100px;
+    border: none;
 }
 
 button {
@@ -65,26 +107,20 @@ button {
     grid-row: 4 / 5;
 }
 
-/*.expirationInputs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    width: 50px;
-}*/
-
-/*.magneticStrip {
+.magneticStrip {
     background-color: black;
-    width: 300px;
-}*/
-
-/*.cardNumberContainer {
-    grid-column: 1 / span 2;
-}*/
-
-/*.cardHolderContainer {
-    grid-column: 1 / 2;
-}*/
-
-/*.expirationContainer {
+    grid-row: 1 / 2;
     grid-column: 2 / 3;
-}*/
+    height: 50px;
+    margin-top: 10px;
+}
+
+.cvcContainer {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    padding-top: 40px;
+}
+
+#cardCVC {
+    width: 50px;
+}
