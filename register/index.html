@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="register.css" />
+    <script src="register.js" defer></script>
   </head>
   <body>
     <div class="testbox">
@@ -35,7 +36,7 @@
             </div>
             <div class="item">
               <p>Grade</p>
-              <select>
+              <select id="grade1">
                 <option selected value="" disabled selected></option>
                 <option value="1">1st</option>
                 <option value="2">2nd</option>
@@ -52,6 +53,7 @@
               </select>
             </div>
           </section>
+          <!--Participant Number-->
           <button type="button" id="add">Add Participant</button>
         </fieldset>
 
@@ -145,6 +147,7 @@
           </div>
         </fieldset>
         <div class="btn-block">
+          <!--Form Submission button-->
           <button type="submit" id="submitButton">Submit</button>
         </div>
       </form>
