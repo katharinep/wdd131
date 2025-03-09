@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A collection of homestyle recipes.">
     <meta name="author" content="Katharine Yuan">
+    <meta property="og:title" content="Recipe Book - A collection of homestyle recipes">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A collection of homestyle recipes.">
+    <meta property="og:image" content="https://katharinep.github.io/wdd131/recipes/images/recipe-book.png">
+    <meta property="og:url" content="https://katharinep.github.io/wdd131/recipes/index.html">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
     <script src="main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="/index.html">Home</a>
+    <a href="../index.html">Home</a>
     <header>
-        <!--logo and name of site-->
-        <img src="recipe-book.png" alt="recipe book">
-        <h1>Recipe Book</h1>
-    </header>
-    <main>
+        <div class="logo-title">
+            <!--logo and name of site-->
+            <img src="images/recipe-book.png" alt="recipe book">
+            <h1>Recipe Book</h1>
+        </div>
         <!--search bar-->
         <form id="search-bar">
-            <input type="search" id="recip-search" placeholder="Find a recipe">
-            <button>magnifying glass icon</button>
+            <input type="search" id="recipe-search" placeholder="Find a recipe">
+            <button type="submit">🔍</button>
         </form>
+    </header>
+    <main>
         <!--articles-->
         <section id="recipes">
             <article class="recipe">
@@ -47,7 +56,7 @@
 	                <span aria-hidden="true" class="icon-star-empty">☆</span>
                 </span>
                 
-                <p id="recipe-description">
+                <p class="recipe-description">
                     Savory waffles made with Sweet potato with a hint of Ginger
                 </p>
             </article>
