@@ -76,7 +76,7 @@ header img {
 #recipes {
     display: flex;
     flex-direction: column;
-    border: solid var(--text-dark);
+    border: solid var(--text-dark) 1px;
     border-radius: 4px;
 }
 
@@ -85,12 +85,17 @@ footer {
     align-items: center;
 }
 
-button {
-    justify-content: space-between;
-}
+/*button {
+    
+}*/
 
 article {
-    margin: 30px;
+    margin: 20px;
+    max-width: 500px;
+}
+
+.tags {
+    margin: 5px;
 }
 
 .tag {
@@ -107,4 +112,5 @@ article {
 
 .social {
     justify-content: space-around;
+    text-align: center;
 }
