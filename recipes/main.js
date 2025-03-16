@@ -4,7 +4,7 @@ import recipes from './recipes.mjs';
 
 //random function//
 function randomNumber(num) {
-	let random = Math.floor(Math.random()*(num-1));
+	let random = Math.floor(Math.random()*(num));
 	return random;
 }
 
@@ -28,17 +28,7 @@ function recipeTemplate(recipe) {
                 
                 <h2>${recipe.name}</h2>
                 
-                <span
-	                class="rating"
-	                role="img"
-	                aria-label="Rating: ${recipe.rating} out of 5 stars"
-                >
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star-empty">⭐</span>
-	                <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
+				${ratingTemplate(recipe.rating)}
                 
                 <p class="recipe-description">
                     ${recipe.description}
@@ -48,7 +38,7 @@ function recipeTemplate(recipe) {
 	`;
 }
 
-console.log(recipeTemplate(generateRecipe(recipes)));
+//console.log(recipeTemplate(generateRecipe(recipes)));//
 
 //template function to generate markup to display tags (takes list of tags as parameter)//
 function tagsTemplate(tags) {
@@ -60,7 +50,7 @@ function ratingTemplate(rating) {
 	let html = `<span
 	class="rating"
 	role="img"
-	aria-label="Rating: ${recipe.rating} out of 5 stars"
+	aria-label="Rating: ${rating} out of 5 stars"
 >`
 	for (let i = 1; i <= 5; i++) {
 		if (i <= rating) {
@@ -74,8 +64,23 @@ function ratingTemplate(rating) {
 	return html;
 }
 
-const recipe = generateRecipe(recipes);
-console.log(recipeTemplate(recipe));
-//create init function to run when the page loades to render out a random recipe.//
+//const recipe = generateRecipe(recipes);//
+//console.log(recipeTemplate(recipe));//
 
+//create init function to run when the page loades to render out a random recipe.//
+function renderRecipes(recipeList) {
+	// get the element we will output the recipes into
+	const recipeArticle = document.getElementById("recipes");
+	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
+	// Set the HTML strings as the innerHTML of our output element.
+	recipeArticle.innerHTML = recipeList.map(recipeTemplate).join('');
+}
+
+function init() {
+  // get a random recipe
+  const recipe = getRandomListEntry(recipes)
+  // render the recipe with renderRecipes.
+  renderRecipes([recipe]);
+}
+init();
 //test page//
