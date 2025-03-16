@@ -34,7 +34,12 @@
 /*resets and global styles*/
 
 img {
-    width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+footer img {
+    width: 50px;
     height: auto;
 }
 

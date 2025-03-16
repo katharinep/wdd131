@@ -81,6 +81,43 @@ function init() {
   const recipe = generateRecipe(recipes)
   // render the recipe with renderRecipes.
   renderRecipes([recipe]);
+  //console.log("description", recipe.description);//
 }
 init();
-//test page//
+
+//filter recipes//
+let query = "";
+
+function filterFunction(recipe) {
+	return (
+		recipe.name.toLowerCase().includes(query) ||
+		recipe.description.toLowerCase().includes(query) ||
+		recipe.tags.find((item) => item.toLowerCase().includes(query))
+	);
+}
+
+function sortFunction(a,b) {
+	return a.name.localeCompare(b.name);
+}
+
+function filter(inputQuery) {
+	query = inputQuery;
+	const filtered = recipes.filter(filterFunction);
+	// sort by name
+	const sorted = filtered.sort(sortFunction);
+		return sorted
+}
+
+function searchHandler(e) {
+	e.preventDefault();
+	// get the search input
+	// convert the value in the input to lowercase
+	query = document.getElementById("recipe-search").value.toLowerCase();
+	// use the filter function to filter our recipes
+	const filteredRecipes = filter(query);
+	// render the filtered list
+	renderRecipes(filteredRecipes);
+}
+
+//event listeners//
+document.getElementById("search-bar").addEventListener("submit", searchHandler);
