@@ -78,7 +78,7 @@ function renderRecipes(recipeList) {
 
 function init() {
   // get a random recipe
-  const recipe = getRandomListEntry(recipes)
+  const recipe = generateRecipe(recipes)
   // render the recipe with renderRecipes.
   renderRecipes([recipe]);
 }
