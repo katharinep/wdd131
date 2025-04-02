@@ -62,7 +62,7 @@ nav {
     justify-content: space-evenly;
     width: 100%;
     background-color: var(--secondary-color);
-    padding: .5rem;
+    padding: .25rem;
 }
 
 nav a {
@@ -74,7 +74,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--accent2-color);
-    color: var(--secondary-color);
+    color: white;
     border-radius: 5px;
 }
 
@@ -96,6 +96,8 @@ footer {
     margin: 1rem;
 }
 
+/*component styles (.post)*/
+
 .logo {
     display: flex;
     align-items: center;
@@ -105,7 +107,28 @@ footer {
     margin-bottom: 1rem;
 }
 
-/*component styles (.post)*/
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: .5rem;
+}
+
+.search-bar input {
+    padding: 2px;
+    border: var(--primary-color) solid 2px;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.search-bar button {
+    padding: 3px;
+    border: var(--primary-color) solid 2px;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--primary-color);
+}
 
 /*media queries*/
 
