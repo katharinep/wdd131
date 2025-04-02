@@ -117,7 +117,7 @@ footer {
 }
 
 .search-bar input {
-    padding: 2px;
+    padding: 5px;
     border: var(--primary-color) solid 2px;
     border-radius: 5px;
     background-color: white;
@@ -125,7 +125,7 @@ footer {
 }
 
 .search-bar button {
-    padding: 3px;
+    padding: 5px;
     border: var(--primary-color) solid 2px;
     border-radius: 5px;
     background-color: white;
@@ -149,7 +149,8 @@ footer {
 
 .post-detail {
     flex: 1;
-    align-items: right;
+    text-align: right;
+    padding-right: 1rem;
 }
 
 .post-content {
@@ -178,13 +179,51 @@ footer {
 
 /*media queries*/
 @media (min-width: 601px) {
+    body {
+        max-width: 1023px;
+    }
+    
     .sidebar {
         display: flex;
         flex-direction: column;
     }
+
+    .query {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        background-color: var(--accent2-color);
+        border: var(--primary-color) solid 1px;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    .query input, .query textarea {
+        padding: 5px;
+        border: var(--primary-color) solid 2px;
+    }
+
+    .query button {
+        color: black;
+        background-color: white;
+        padding: 5px 10px;
+        border: var(--primary-color) solid 2px;
+        border-radius: 5px;
+        margin: .5rem 0;
+        font-size: 16px;
+    }
+
+    .query button:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
 }
 
 @media (min-width: 1024px) {
+    body {
+        min-width: 1024px;
+    }
+    
     .sidebar {
         display: flex;
         flex-direction: column;
