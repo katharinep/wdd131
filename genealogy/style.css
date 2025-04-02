@@ -1,0 +1,62 @@
+/*reset and base styles*/
+
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  :root {
+    --primary-color: #6C584C;
+    --secondary-color: #F0EAD2;
+    --accent1-color: #A98467;
+    --accent2-color: #ADC178;
+  
+    --heading-font: "Nunito", sans-serif;
+    --paragraph-font: "Nunito", sans-serif;
+  
+    --headline-color-on-white: var(--primary-color);
+    --headline-color-on-color: white;
+    --paragraph-color-on-white: var(--primary-color);
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--heading-font);
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+}
+
+/* typography*/
+
+/*layout containers*/
+
+/*component styles (.post)*/
+
+/*media queries*/
+
