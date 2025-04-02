@@ -80,6 +80,8 @@ nav a:hover {
 
 footer {
     background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-weight: bold;
     margin: 1rem;
     padding: .5rem;
     border-top: var(--primary-color) solid 5px;
@@ -92,6 +94,15 @@ footer {
 .container {
     background-color: var(--secondary-color);
     margin: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
 }
 
 /*component styles (.post)*/
