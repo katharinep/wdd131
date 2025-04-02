@@ -156,7 +156,7 @@ footer {
 .post-content {
     flex: 3;
     border-left: var(--accent2-color) solid 3px;
-    padding-left: 10px;
+    padding-left: 1rem;
 }
 
 .post-title {
@@ -186,6 +186,26 @@ footer {
     .sidebar {
         display: flex;
         flex-direction: column;
+    }
+
+    .about {
+        background-color: var(--accent2-color);
+        border: var(--primary-color) solid 1px;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    .about h3 {
+        text-align: center;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    .about p {
+        background-color: white;
+        padding: 5px;
     }
 
     .query {
