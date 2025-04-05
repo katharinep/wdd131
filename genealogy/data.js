@@ -26,4 +26,25 @@ export const articles = [
         alt:"old German writing on postcard",
         content:"Reading historical German records often requires more than a knowledge of the language—it demands familiarity with older handwriting styles like Kurrent and Sütterlin. These scripts, once standard in German-speaking countries, can appear almost unreadable to modern eyes. The key to deciphering these texts is patience and practice. Start by learning the basic alphabet forms and comparing them to typed transcripts when possible. Many genealogists find it helpful to keep a script chart nearby when working with church books, civil registrations, or family documents. Don't be discouraged if it takes time—many letters can look similar, especially when written quickly or by different hands. Over time, your eyes will adjust, and you'll begin to recognize familiar words and patterns. If you're feeling stuck, there are online forums and translation groups that can help. Deciphering old German script opens a door to generations of untold stories. With effort and a few tools, you'll be amazed at what you can discover."
     }
-]
+];
+
+export const forms = [
+    {
+        title: "Understanding Census Records German Church Records and What They Reveal",
+        title: "Family Group Sheet",
+        title: "Pedigree Chart (4-5 generation)",
+        title: "Census Extraction Form (U.S.)",
+        title: "German Church Record Extraction Form",
+        title: "Research Log Template",
+        title: "Abbreviations in Census and Church Records",
+        title: "Gothic Script Alphabet Chart (for reading German records)",
+        title: "Latin Terms Commonly Found in Church Registers",
+        title: "German Months and Date Formats Cheat Sheet",
+        title: "Immigration Ports and Timeline Chart",
+        title: "Relationship Terms Cheat Sheet (e.g., 2nd cousin once removed)",
+        title: "Common Occupations and Their Abbreviations"
+    }
+];
+
+export { articles };
+export { forms };
