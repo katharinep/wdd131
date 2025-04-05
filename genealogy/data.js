@@ -30,19 +30,56 @@ export const articles = [
 
 export const forms = [
     {
-        title: "Understanding Census Records German Church Records and What They Reveal",
-        title: "Family Group Sheet",
-        title: "Pedigree Chart (4-5 generation)",
-        title: "Census Extraction Form (U.S.)",
-        title: "German Church Record Extraction Form",
-        title: "Research Log Template",
-        title: "Abbreviations in Census and Church Records",
-        title: "Gothic Script Alphabet Chart (for reading German records)",
-        title: "Latin Terms Commonly Found in Church Registers",
-        title: "German Months and Date Formats Cheat Sheet",
-        title: "Immigration Ports and Timeline Chart",
-        title: "Relationship Terms Cheat Sheet (e.g., 2nd cousin once removed)",
-        title: "Common Occupations and Their Abbreviations"
+    title: "Understanding Census Records German Church Records and What They Reveal",
+    description: "An overview of the key details found in U.S. census and German church records, and how to interpret them."
+    },
+    {
+    title: "Family Group Sheet",
+    description: "A simple worksheet for tracking parents and children within a family unit."
+    },
+    {
+    title: "Pedigree Chart (4–5 generation)",
+    description: "Visual layout for mapping up to five generations of direct ancestors."
+    },
+    {
+    title: "Census Extraction Form (U.S.)",
+    description: "Use this form to transcribe and organize information from U.S. census entries."
+    },
+    {
+    title: "German Church Record Extraction Form",
+    description: "A structured template for recording details from German baptisms, marriages, and burials."
+    },
+    {
+    title: "Research Log Template",
+    description: "Track research goals, sources searched, and next steps with this reusable log."
+    },
+    {
+    title: "Abbreviations in Census and Church Records",
+    description: "A reference list of common abbreviations found in genealogical documents."
+    },
+    {
+    title: "Gothic Script Alphabet Chart (for reading German records)",
+    description: "A printable guide to the Gothic/Kurrent alphabet for deciphering handwritten German records."
+    },
+    {
+    title: "Latin Terms Commonly Found in Church Registers",
+    description: "Quick reference for Latin words and phrases frequently used in Catholic and Protestant records."
+    },
+    {
+    title: "German Months and Date Formats Cheat Sheet",
+    description: "Helps decode month names, number formats, and date patterns in German-language documents."
+    },
+    {
+    title: "Immigration Ports and Timeline Chart",
+    description: "A snapshot of common emigration ports and the periods they were active."
+    },
+    {
+    title: "Relationship Terms Cheat Sheet (e.g., 2nd cousin once removed)",
+    description: "Defines complex kinship terms and how to understand cousin relationships."
+    },
+    {
+    title: "Common Occupations and Their Abbreviations",
+    description: "List of historical job titles and their abbreviations found in older records."
     }
 ];
 
