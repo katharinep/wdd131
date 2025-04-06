@@ -48,7 +48,6 @@ if (formsList) {
 if (contactForm) {
     contactForm.addEventListener('submit', e => {
         e.preventDefault();
-        console.log("form submitted");
         formMessage.style.display = 'block';
     })
 }
