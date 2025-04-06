@@ -2,6 +2,8 @@ import { articles, forms } from './data.js';
 
 const articleList = document.getElementById('articles');
 const formsList = document.getElementById('formsList');
+const contactForm = document.querySelector('.query');
+const formMessage = document.querySelector('.message');
 
 function renderArticles(data) {
     data.forEach(article => {
@@ -41,4 +43,11 @@ if (articleList) {
 
 if (formsList) {
     renderForms(forms);
+}
+
+if (contactForm) {
+    contact.Form.addEventListener('submit', e => {
+        e.preventDefault();
+        formMessage.style.display = 'block';
+    })
 }
