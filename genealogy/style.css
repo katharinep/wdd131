@@ -203,6 +203,20 @@ footer {
     font-weight: 200;
 }
 
+.about-article {
+    background-color: white;
+    border: var(--primary-color) solid 2px;
+    border-radius: 5px;
+}
+
+.about-article > * {
+    padding: 10px;
+}
+
+.about-article img {
+    max-width: 200px;
+}
+
 /*media queries*/
 @media (min-width: 601px) {
     body {
