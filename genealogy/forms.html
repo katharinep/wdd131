@@ -16,7 +16,7 @@
 
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js" defer></script>
 </head>
 <body>
     <header>
@@ -38,7 +38,29 @@
     <main class="container">
         <h1>Genealogy Forms</h1>
         <p>Below are some helpful tools and templates for research.</p>
-        <div class="forms-list" id="formsList"></div>        
+        <div class="forms-list" id="formsList"></div>
+        <aside class="sidebar">
+            <div class="about">
+                <h3>About Me</h3>
+                <img src="images/professional-mockup.png" alt="Katharine Yuan">
+                <p>Hello. I am Katharine Yuan. I'm a genealogy enthusiast with a passion for uncovering the stories that connect generations. I specialize in German genealogical research and love helping others navigate language barriers, historical records, and cultural context to discover their family roots. Whether you're just starting out or diving deep into archival work, I believe every ancestor has a story worth telling.</p>
+            </div>
+            <div class="query">
+                <h3>Contact Me</h3>
+                <form>
+                    <label>Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label>Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </aside>        
     </main>
     <footer>
         <p>© 2025 Katharine Yuan</p>

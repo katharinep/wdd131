@@ -1,6 +1,7 @@
 import { articles, forms } from './data.js';
 
 const articleList = document.getElementById('articles');
+const formsList = document.getElementById('formsList');
 
 function renderArticles(data) {
     data.forEach(article => {
@@ -21,10 +22,23 @@ function renderArticles(data) {
     });
 }
 
-function renderForms() {
+function renderForms(data) {
+    data.forEach(form => {
+        const formBox = document.createElement('div');
+        formBox.classList.add('form-box');
+        formBox.innerHTML = `
+        <h3>${form.title}<h3>
+        <p>${form.description}</p>
+        <a href="#">Download PDF</a>`;
 
+        formsList.appendChild(formBox);
+    });
 }
 
 if (articleList) {
     renderArticles(articles);
+}
+
+if (formsList) {
+    renderForms(forms);
 }

@@ -183,6 +183,19 @@ footer {
     color: var(--secondary-color);
 }
 
+.form-box {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-box h3 {
+
+}
+
+.form-box a {
+
+}
+
 /*media queries*/
 @media (min-width: 601px) {
     body {
