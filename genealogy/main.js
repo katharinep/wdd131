@@ -3,7 +3,7 @@ import { articles, forms } from './data.js';
 const articleList = document.getElementById('articles');
 const formsList = document.getElementById('formsList');
 const contactForm = document.querySelector('.query');
-const formMessage = document.querySelector('.message');
+const formMessage = document.querySelector('.form-message');
 
 function renderArticles(data) {
     data.forEach(article => {
@@ -46,8 +46,9 @@ if (formsList) {
 }
 
 if (contactForm) {
-    contact.Form.addEventListener('submit', e => {
+    contactForm.addEventListener('submit', e => {
         e.preventDefault();
+        console.log("form submitted");
         formMessage.style.display = 'block';
     })
 }
