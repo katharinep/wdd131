@@ -157,16 +157,22 @@ footer {
     flex: 3;
     border-left: var(--accent2-color) solid 3px;
     padding-left: 1rem;
+    padding: 20px;
 }
 
 .post-title {
     color: var(--primary-color);
+    padding-bottom: 15px;
 }
 
 .post img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.post-body {
+    padding: 15px;
 }
 
 .sidebar {

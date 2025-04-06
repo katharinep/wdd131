@@ -82,6 +82,3 @@ export const forms = [
     description: "List of historical job titles and their abbreviations found in older records."
     }
 ];
-
-export { articles };
-export { forms };
