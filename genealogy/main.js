@@ -4,6 +4,9 @@ const articleList = document.getElementById('articles');
 const formsList = document.getElementById('formsList');
 const contactForm = document.querySelector('.query');
 const formMessage = document.querySelector('.form-message');
+const searchForm = document.querySelector('.search-bar');
+const searchInput = document.querySelector('input[name="search"]');
+const searchFeedback = document.querySelector('.search-feedback');
 
 function renderArticles(data) {
     data.forEach(article => {
@@ -50,4 +53,22 @@ if (contactForm) {
         e.preventDefault();
         formMessage.style.display = 'block';
     })
+}
+
+if (searchForm) {
+    searchForm.addEventListener('submit', e => {
+        e.preventDefault();
+        console.log("Searched for: " + query);
+        const query = searchInput.value.trim();
+
+        if (query === '') {
+            searchFeedback.innerHTML = "Please enter a search term.";
+        }
+        else {
+            searchFeedback.innerHTML = "You searched for: " + {query};
+        }
+
+        searchFeedback.style.display = 'block';
+        searchInput.value = '';
+    });
 }
